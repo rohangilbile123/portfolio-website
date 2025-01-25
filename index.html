@@ -64,7 +64,60 @@
             background-color: #17a566;
         }
         
-        /* Skills Summary Section */
+        /* New Skills Section Styles */
+        .skills-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #0f5132;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background-color: #f8fafb;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #0f5132;
+        }
+
+        .skill-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Skills Summary Section
         .skills-section {
             padding: 50px 20px;
             background-color: #ffffff;
@@ -98,7 +151,7 @@
             padding: 10px 15px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+        } */
 
          /* Card Section Styles */
          .card-section {
@@ -176,7 +229,7 @@
     </section>
 
     <!-- Skills Summary Section -->
-    <section class="skills-section">
+    <!-- <section class="skills-section">
         <div class="skills-container">
             <h2>Skills Summary</h2>
             <ul class="skills-list">
@@ -189,6 +242,53 @@
                 <li>Version Control: Git, Bitbucket</li>
                 <li>Security Best Practices</li>
             </ul>
+        </div>
+    </section> -->
+    
+    <!-- New Skills Summary Section -->
+    <section class="skills-section">
+        <h2>Skills Summary</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="img/aws.jpeg" alt="AWS">
+                <h3>AWS</h3>
+                <p>Proficiency in AWS EC2, S3, IAM, Elastic Load Balancer, ECR, ECS.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/azure.png" alt="Azure">
+                <h3>Microsoft Azure</h3>
+                <p>Proficiency in Virtual Machines, Storage Accounts, Application Gateway, Virtual Networks, Microsoft Entra ID.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/Kubernetes.webp" alt="Containerization">
+                <h3>Containerization</h3>
+                <p>Experience with Docker, Kubernetes, and microservices architectures.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/grafana-logo.png" alt="Monitoring">
+                <h3>Monitoring</h3>
+                <p>Knowledge of Grafana, Prometheus, Loki, Promtail and cAdvisor.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/shellscript.png" alt="Scripting">
+                <h3>Scripting</h3>
+                <p>Proficient in Bash, Python, and PowerShell for automation.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/terraform.png" alt="Security">
+                <h3>Automation</h3>
+                <p>Implentation of Automation using Terraform and Ansible</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/jenkins.jpg" alt="Security">
+                <h3>CI-CD</h3>
+                <p>Built and deployed pipelines using GitHub Actions and Jenkins</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/teammanage.webp" alt="Security">
+                <h3>Personality</h3>
+                <p>Highly collaborative with good presentation skills</p>
+            </div>
         </div>
     </section>
 
