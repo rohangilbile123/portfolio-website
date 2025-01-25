@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5f3;
+        }
+
+        .about-section {
+            background: linear-gradient(135deg, #0f5132 30%, #1a6646);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture img {
+            border-radius: 70%; /* Increased the border radius */
+            width: 200px;
+            height: 200px;
+            border: 5px solid #ffffff;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem; /* Increased the font size */
+            margin-bottom: 10px;
+        }
+
+        .about-content h3 {
+            font-size: 1.5rem; /* Increased the font size */
+            color: #c9f5df;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1.2rem; /* Increased the font size */
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #21bf73;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #17a566;
+        }
+        
+        /* Skills Summary Section */
+        .skills-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .skills-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skills-container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0f5132;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            font-size: 1.2rem;
+            color: #555;
+            background: #f4f9f8;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+         /* Card Section Styles */
+         .card-section {
+            padding: 50px 20px;
+            background-color: #e8f5f3;
+        }
+
+        .cards-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #21bf73;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .card a:hover {
+            background-color: #17a566;
+        }
+    </style>
+</head>
+<body>
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Profile Image -->
+            <div class="profile-picture">
+                <img src="img/Rohan.jpg" alt="Profile Picture">
+            </div>
+            <!-- About Content -->
+            <div class="about-content">
+                <h2>Rohan Gilbile</h2>
+                <h3>DevOps Engineer | 1.5 Years Experience</h3>
+                <p>
+                    I am a DevOps Engineer focused on optimizing scalable systems through streamlined processes and proactive solutions.
+                </p>
+                <a href="#" class="button">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Summary Section -->
+    <section class="skills-section">
+        <div class="skills-container">
+            <h2>Skills Summary</h2>
+            <ul class="skills-list">
+                <li>Cloud Platforms: AWS, Azure, GCP</li>
+                <li>CI/CD Pipelines: Jenkins, GitHub Actions</li>
+                <li>Containerization: Docker, Kubernetes</li>
+                <li>Monitoring Tools: Grafana, Prometheus</li>
+                <li>Infrastructure as Code: Terraform, Ansible</li>
+                <li>Scripting: Bash, Python</li>
+                <li>Version Control: Git, Bitbucket</li>
+                <li>Security Best Practices</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="card-section">
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="img/cloud-icon.png" alt="Cloud Icon">
+                <h3>Cloud Solutions</h3>
+                <p>
+                    Expertise in AWS, Azure, and GCP for scalable and reliable cloud architectures.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="img/devops-icon.png" alt="DevOps Icon">
+                <h3>DevOps Practices</h3>
+                <p>
+                    Implement CI/CD pipelines, containerization, and automation for smooth deployments.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="img/security-icon.png" alt="Security Icon">
+                <h3>Security Solutions</h3>
+                <p>
+                    Focused on delivering secure applications with the latest best practices.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
